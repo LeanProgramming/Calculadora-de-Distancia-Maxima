@@ -36,12 +36,6 @@ button {
   align-self: self-end;
 }
 
-.barra-antena {
-  width: 20px;
-  background-color: #007bff;
-  margin: 0 10px;
-}
-
 .distancia-los {
   width: 100%;
   border-bottom: 2px dotted black;

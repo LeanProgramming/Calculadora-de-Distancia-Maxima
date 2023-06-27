@@ -25,11 +25,15 @@ document
     let distanciaGrafico = Math.max(alturaAntena1, alturaAntena2);
     let barraAntena1 = document.createElement("div");
     barraAntena1.className = "antenas";
-    barraAntena1.innerHTML = `<div class="barra-antena" style="height:${alturaAntena1 }px"></div><p>Antena 1: ${alturaAntena1} m</p>`;
+    barraAntena1.innerHTML = `<div>
+    <img class="antena" src="antena.png" alt="antena" height="${alturaAntena1}px">
+    </div><p>Antena 1: ${alturaAntena1} m</p>`;
 
     let barraAntena2 = document.createElement("div");
     barraAntena2.className = "antenas";
-    barraAntena2.innerHTML = `<div class="barra-antena" style="height:${alturaAntena2}px"></div><p>Antena 2: ${alturaAntena2} m</p>`;
+    barraAntena2.innerHTML = `<div>
+    <img class="antena" src="antena.png" alt="antena"  height="${alturaAntena2}px">
+    </div><p>Antena 2: ${alturaAntena2} m</p>`;
 
     let distanciaLOS = document.createElement("div");
     distanciaLOS.innerHTML= `<div class="distancia-los" style="height:${distanciaGrafico}px"></div><p>Distancia máxima: ${distanciaMaxima.toFixed(2)} km</p>`;
